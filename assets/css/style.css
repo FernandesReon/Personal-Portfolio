@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --darkOne: #333;
     --darkTwo: #7a7a7a;
     --darkThree: #b5b5b5;
@@ -14,35 +14,35 @@
     --casualColor: #6b44e0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-body{
+body {
     font-family: "JetBrains Mono", monospace;
     overflow-x: hidden;
 }
 
 input,
 textarea,
-button{
+button {
     font-family: "JetBrains Mono", monospace;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     width: 100%;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 80.35rem;
     margin: 0 auto;
@@ -50,7 +50,7 @@ img{
     flex-wrap: wrap;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: .8rem 1.5rem;
     font-size: 1.1rem;
@@ -62,26 +62,26 @@ img{
     color: var(--lightOne);
 }
 
-section{
+section {
     overflow: hidden;
     padding: 5rem 0;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
 }
 
-.text{
+.text {
     font-size: 1.15rem;
     color: var(--darkTwo);
     text-align: justify;
     line-height: 1.8rem;
 }
 
-.image{
+.image {
     position: relative;
     display: flex;
     align-items: center;
@@ -90,24 +90,24 @@ section{
 
 /* General Code Ends */
 
-header{
+header {
     width: 100%;
     z-index: 50;
 }
 
-nav{
+nav {
     width: 100%;
     position: relative;
     z-index: 10;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: .5rem;
 }
 
-.letter{
+.letter {
     width: 4rem;
     height: 4rem;
     background-color: var(--darkOne);
@@ -120,13 +120,13 @@ nav{
     border-radius: 50%;
 }
 
-.name{
+.name {
     font-size: 2rem;
     font-weight: 800;
     color: var(--darkTwo);
 }
 
-nav .container{
+nav .container {
     background-color: var(--lightOne);
     width: 100%;
     height: auto;
@@ -138,14 +138,14 @@ nav .container{
 }
 
 /*ul*/
-.navlist{
+.navlist {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /*ul li a */
-.navlink{
+.navlink {
     display: inline-block;
     padding: .5rem 1rem;
     font-size: 1.1rem;
@@ -154,28 +154,28 @@ nav .container{
     color: var(--darkOne);
 }
 
-.navlink:hover{
+.navlink:hover {
     text-decoration: underline;
     text-underline-offset: 0.2rem;
     color: var(--casualColor);
 }
 
-ion-icon{
+ion-icon {
     font-size: 2rem;
     --ionicon-stroke-width: 3rem;
 }
 
-.mobile-view-btns .icon-close{
+.mobile-view-btns .icon-close {
     display: none;
 }
 
-.mobile-view-btns{
+.mobile-view-btns {
     display: none;
     cursor: pointer;
 }
 
 /* Hero Section Starts */
-.hero-container{
+.hero-container {
     margin: 1.5rem auto;
     width: 100%;
     min-height: calc(100vh - 15vh);
@@ -183,37 +183,56 @@ ion-icon{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap-reverse;
-    gap: 1rem;
 }
 
 .hero-intro,
-.hero-image{
+.hero-image {
     flex: 1;
 }
 
-.hero-name{
+.hero-name {
     font-size: 4rem;
     font-weight: 800;
     color: var(--casualColor);
     margin-bottom: 3rem;
 }
 
-.call-for-action{
+.hero-intro .text {
+    margin: 1rem auto;
+}
+
+.hero-intro .country {
+    background: linear-gradient(to bottom,
+    rgb(255, 81, 0),
+    rgb(255, 255, 255),
+    rgb(0, 112, 58)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.call-for-action {
     margin: .8rem auto;
 }
 
-.call-for-action button{
+.call-for-action button {
     margin: 0 0.5rem;
 }
 
-.call-for-action .contact-btn{
+.call-for-action .contact-btn {
     background-color: var(--casualColor);
 
 }
 
-.hero-image img{
+.hero-image img {
     max-width: 350px;
     height: auto;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
-    box-shadow: 0 0 20px 5px var(--darkTwo);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

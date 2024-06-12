@@ -74,37 +74,43 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+/* For screen size between 425px to 320px */
+
+@media screen and (max-width: 426px) and (min-width: 320px){
+    nav .container{
+        min-height: 10vh;
+    }
+
     .letter{
         width: 2.5rem;
         height: 2.5rem;
+    }
+
+    .letter, .name{
         font-size: 1.5rem;
     }
 
-    .name{
-        font-size: 1.5rem;
+    .hero-image img{
+        max-width: 200px;
     }
 
     .text{
-        font-size: 1rem;
+        font-size: .95rem;
+        line-height: 1.8;
     }
 
     .title{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .hero-name{
-        font-size: 2.2rem;
+        font-size: 1.95rem;
     }
 
     .call-for-action{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
-    }
-
-    .hero-image img{
-        max-width: 250px;
+        gap: .8rem;
     }
 }
