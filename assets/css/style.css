@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --darkOne: #333;
+    --darkTwo: #7a7a7a;
+    --darkThree: #b5b5b5;
+    --lightOne: #f9fafb;
+    --casualColor: #6b44e0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: "JetBrains Mono", monospace;
+    overflow-x: hidden;
+}
+
+input,
+textarea,
+button{
+    font-family: "JetBrains Mono", monospace;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 80.35rem;
+    margin: 0 auto;
+    padding: .5rem 3rem;
+    flex-wrap: wrap;
+}
+
+.btn{
+    display: inline-block;
+    padding: .8rem 1.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: var(--darkOne);
+    color: var(--lightOne);
+}
+
+section{
+    overflow: hidden;
+    padding: 5rem 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    font-size: 1.15rem;
+    color: var(--darkTwo);
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+.image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* General Code Ends */
+
+header{
+    width: 100%;
+    z-index: 50;
+}
+
+nav{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.letter{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--darkOne);
+    color: var(--lightOne);
+    font-size: 2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--darkTwo);
+}
+
+nav .container{
+    background-color: var(--lightOne);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 15vh;
+    border-radius: 0 0 2rem 2rem;
+}
+
+/*ul*/
+.navlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*ul li a */
+.navlink{
+    display: inline-block;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+    color: var(--darkOne);
+}
+
+.navlink:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    color: var(--casualColor);
+}
+
+ion-icon{
+    font-size: 2rem;
+    --ionicon-stroke-width: 3rem;
+}
+
+.mobile-view-btns .icon-close{
+    display: none;
+}
+
+.mobile-view-btns{
+    display: none;
+    cursor: pointer;
+}
+
+/* Hero Section Starts */
+.hero-container{
+    margin: 1.5rem auto;
+    width: 100%;
+    min-height: calc(100vh - 15vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+}
+
+.hero-intro,
+.hero-image{
+    flex: 1;
+}
+
+.hero-name{
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--casualColor);
+    margin-bottom: 3rem;
+}
+
+.call-for-action{
+    margin: .8rem auto;
+}
+
+.call-for-action button{
+    margin: 0 0.5rem;
+}
+
+.call-for-action .contact-btn{
+    background-color: var(--casualColor);
+
+}
+
+.hero-image img{
+    max-width: 350px;
+    height: auto;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
+    box-shadow: 0 0 20px 5px var(--darkTwo);
+}
