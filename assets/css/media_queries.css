@@ -1,8 +1,4 @@
 @media screen and (max-width: 1024px) {
-    nav .container {
-        flex-direction: column;
-        gap: .5rem;
-    }
     .hero-container{
         gap: 3rem;
     }
