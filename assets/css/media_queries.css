@@ -1,6 +1,6 @@
 @media screen and (max-width: 1024px) {
-    .hero-container{
-        gap: 3rem;
+nav .container{
+        min-height: 10vh;
     }
 
     .hero-intro,
