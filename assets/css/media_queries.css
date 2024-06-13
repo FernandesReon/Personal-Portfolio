@@ -1,19 +1,20 @@
-@media screen and (max-width: 1024px) {
-    nav .container {
-        flex-direction: column;
-        gap: .5rem;
-    }
-    .hero-container{
-        gap: 3rem;
+@media screen and (max-width: 1275px) {
+
+    .section__pic-container,
+    .about-details-container {
+        min-width: 100%;
     }
 
-    .hero-intro,
-    .hero-image {
-        flex: 0 0 100%;
+    .section-container{
+        flex-direction: column;
+    }
+
+    .about{
+        padding: 3rem;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1175px) {
     .mobile-view-btns {
         display: block;
         z-index: 100;
@@ -72,45 +73,81 @@
     .hero-image {
         flex: 0 0 100%;
     }
+
+}
+
+@media screen and (max-width: 785px) {
+    .about-pic{
+        max-width: 250px;
+    }
+
+    .about-containers{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* For screen size between 635px to 320px */
 
-@media screen and (max-width: 635px) and (min-width: 320px){
-    nav .container{
+@media screen and (max-width: 635px) and (min-width: 320px) {
+    nav .container {
         min-height: 10vh;
     }
 
-    .letter{
+    .letter {
         width: 2.5rem;
         height: 2.5rem;
     }
 
-    .letter, .name{
+    .letter,
+    .name {
         font-size: 1.5rem;
     }
 
-    .hero-image img{
+    .hero-image img {
         max-width: 200px;
     }
 
-    .text{
+    .text {
         font-size: .95rem;
         line-height: 1.8;
     }
 
-    .title{
-        font-size: 1.2rem;
+    .title {
+        font-size: 2rem;
     }
 
-    .hero-name{
-        font-size: 1.95rem;
+    .hero-name {
+        font-size: 2.5rem;
     }
 
-    .call-for-action{
+    .call-for-action {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: .8rem;
+    }
+
+    .about {
+        padding: 2rem 0;
+    }
+
+}
+
+@media screen and (max-width: 435px) {
+    .hero-name {
+        font-size: 1.9rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .section-header .title{
+        font-size: 2rem;
+    }
+
+    .about-pic{
+        max-width: 200px;
     }
 }
