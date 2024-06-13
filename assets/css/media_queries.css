@@ -1,4 +1,19 @@
-@media screen and (max-width: 1175px) {
+@media screen and (max-width: 1024px) {
+    nav .container {
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .hero-container{
+        gap: 3rem;
+    }
+
+    .hero-intro,
+    .hero-image {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
     .mobile-view-btns {
         display: block;
         z-index: 100;
