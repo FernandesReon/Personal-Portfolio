@@ -132,6 +132,14 @@
         padding: 2rem 0;
     }
 
+    .section-header .title::after{
+        width: 100px;
+    }
+
+    .text-container .btn{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 435px) {

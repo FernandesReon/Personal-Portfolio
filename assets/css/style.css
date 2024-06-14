@@ -64,16 +64,7 @@ img {
 
 section {
     overflow: hidden;
-    padding: 7rem 0;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-    grid-template-rows: 40rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    padding: 4rem 0;
 }
 
 .title {
@@ -320,7 +311,7 @@ ion-icon {
 }
 
 .about-pic {
-    max-width: 350px;
+    max-width: 400px;
     border-radius: 2rem;
 }
 
@@ -334,7 +325,7 @@ ion-icon {
     text-align: center;
 }
 
-.details-container > p{
+.details-container>p {
     color: var(--darkOne);
 }
 
@@ -344,17 +335,95 @@ ion-icon {
     gap: 1rem;
 }
 
-.icon{
+.icon {
     max-width: 40px;
     height: auto;
 }
 
 .section__pic-container,
-.about-details-container{
+.about-details-container {
     min-width: 50%;
 }
 
-.section__pic-container{
+.section__pic-container {
     display: flex;
     justify-content: center;
+}
+
+.about .btn {
+    margin: .5rem auto;
+    background-color: var(--casualColor);
+}
+
+/* Experience Section */
+#experience {
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-detail-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-template-areas:
+        "frontend   backend"
+        "database   backend"
+        "system     system";
+}
+
+.expr {
+    border: 1px solid var(--darkTwo);
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: var(--lightOne);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.frontend {
+    grid-area: frontend;
+}
+
+.backend {
+    grid-area: backend;
+}
+
+.database {
+    grid-area: database;
+}
+
+.system{
+    grid-area: system;
+    width: 50%;
+}
+
+svg {
+    max-width: 60px;
+    height: auto;
+}
+
+.article-container {
+    width: 100%;
+    padding: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+article {
+    padding: .5rem;
+    width: 15rem;
+}
+
+article img {
+    max-width: 80px;
 }
