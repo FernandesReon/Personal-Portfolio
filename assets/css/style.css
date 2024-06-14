@@ -64,7 +64,7 @@ img {
 
 section {
     overflow: hidden;
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 .title {
@@ -275,7 +275,7 @@ ion-icon {
     content: "";
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 5;
     left: 50%;
     transform: translateX(-50%);
     width: 200px;
@@ -381,9 +381,10 @@ ion-icon {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex: 1;
+    /* flex: 1; */
 }
 
 .frontend {
@@ -414,7 +415,7 @@ svg {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: .5rem;
+    gap: .8rem;
     flex: 1;
     flex-wrap: wrap;
 }

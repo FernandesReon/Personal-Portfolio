@@ -87,6 +87,35 @@
     }
 }
 
+
+@media screen and (max-width: 825px) {
+    .experience-detail-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "frontend"
+        "backend"
+        "database"
+        "system";
+    }
+
+    .system{
+        width: 100%;
+    }
+
+    .article-container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    article{
+        width: 10rem;
+    }
+
+    article img{
+        max-width: 40px;
+    }
+}
+
 /* For screen size between 635px to 320px */
 
 @media screen and (max-width: 635px) and (min-width: 320px) {
