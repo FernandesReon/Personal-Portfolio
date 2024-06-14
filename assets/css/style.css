@@ -213,6 +213,7 @@ ion-icon {
             rgb(255, 255, 255),
             rgb(0, 112, 58));
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     text-transform: uppercase;
     font-weight: 800;
@@ -374,7 +375,8 @@ ion-icon {
 }
 
 .expr {
-    border: 1px solid var(--darkTwo);
+    border: 0.1rem solid var(--casualColor);
+    border-color: rgb(163, 163, 163);
     border-radius: 10px;
     padding: 1.5rem;
     background-color: var(--lightOne);
