@@ -187,4 +187,11 @@
     .about-pic{
         max-width: 200px;
     }
+
+    .project-btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
 }

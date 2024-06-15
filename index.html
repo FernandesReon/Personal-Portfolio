@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="hero-image image">
-                    <img src="assets/images/ReonFernandes.jpg" alt="Reon Fernandes Image">
+                    <img src="assets/images/ReonFernandes.jpg" alt="Reon Fernandes Image" oncontextmenu="return false;">
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
 
             <div class="section-container">
                 <div class="section__pic-container">
-                    <img src="./assets/images/Reon.jpg" alt="Profile picture" class="about-pic" />
+                    <img src="./assets/images/Reon.jpg" alt="Profile picture" class="about-pic" oncontextmenu="return false;"/>
                 </div>
                 <div class="about-details-container">
                     <div class="about-containers">
@@ -109,7 +109,9 @@
                             Development. I thrive to solving
                             complex problems and continue to expand my knowledge.
                         </p>
-                        <button class="btn" onclick="window.open('https://www.linkedin.com/in/reon-fernandes-9b173824a/', '_blank')">Read More</button>
+                        <button class="btn"
+                            onclick="window.open('https://www.linkedin.com/in/reon-fernandes-9b173824a/', '_blank')">Read
+                            More</button>
                     </div>
                 </div>
             </div>
@@ -123,6 +125,8 @@
             </div>
 
             <div class="experience-detail-container">
+
+                <!--Frontend Container-->
                 <div class="expr frontend">
                     <h3 class="title-sm">Frontend Development</h3>
                     <div class="article-container">
@@ -145,27 +149,22 @@
                         </article>
 
                         <article>
-
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-
                             <div>
                                 <h2>Javascript</h2>
                                 <p>Basic</p>
                             </div>
                         </article>
-
-
                     </div>
                 </div>
+                <!--Backend Container-->
                 <div class="expr backend">
                     <h3 class="title-sm">Backend Development</h3>
                     <div class="article-container">
                         <article>
-
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-
                             <div>
                                 <h2>Java</h2>
                                 <p>Intermediate</p>
@@ -173,10 +172,8 @@
                         </article>
 
                         <article>
-
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
-
                             <div>
                                 <h2>Spring Boot</h2>
                                 <p>Basic</p>
@@ -192,10 +189,8 @@
                         </article>
 
                         <article>
-
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-
                             <div>
                                 <h2>Python</h2>
                                 <p>Basic</p>
@@ -203,9 +198,7 @@
                         </article>
 
                         <article>
-
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-
                             <div>
                                 <h2>Git</h2>
                                 <p>Intermediate</p>
@@ -213,15 +206,13 @@
                         </article>
                     </div>
                 </div>
+                <!--Database Container-->
                 <div class="expr database">
                     <h3 class="title-sm">Database</h3>
                     <div class="article-container">
                         <article>
-
-
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-
                             <div>
                                 <h2>MySQL</h2>
                                 <p>Basic - Intermediate</p>
@@ -229,10 +220,8 @@
                         </article>
 
                         <article>
-
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" />
-
                             <div>
                                 <h2>MonogDB</h2>
                                 <p>Basic - Intermediate</p>
@@ -241,14 +230,13 @@
                     </div>
                 </div>
 
+                <!--Operating System Container-->
                 <div class="expr system">
                     <h3 class="title-sm">Operating Systems</h3>
                     <div class="article-container">
                         <article>
-
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" />
-
                             <div>
                                 <h2>Windows 10</h2>
                                 <p>Intermediate</p>
@@ -256,10 +244,8 @@
                         </article>
 
                         <article>
-
                             <img
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
-
                             <div>
                                 <h2>Kali Linux</h2>
                                 <p>Basic - Intermediate</p>
@@ -267,6 +253,87 @@
                         </article>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="title" data-title="My Projects">Portfolio</h3>
+            </div>
+
+            <div class="project-detail-container">
+                <div class="projects project1">
+                    <img src="assets/images/reservation.svg" alt="project image">
+                    <div class="project-container">
+                        <article class="article">
+                            <h3 class="title-sm">Online Reservation System</h3>
+                            <p class="text">It's a Java console based project that performs user
+                                authentication and CRUD operations from MySQL database in real-time.
+                            </p>
+
+                            <div class="project-btns">
+                                <button class="btn" onclick="window.open('https://github.com/FernandesReon/OIBSIP_TaskNo1_Online_Reservation_System', '_blank')">Github</button>
+                                <button class="btn" style="background-color: #0077B5;" onclick="window.open('https://www.linkedin.com/posts/reon-fernandes-9b173824a_javadevelopment-internshipproject-softwareengineering-activity-7203761152894357506-Oh-G?utm_source=share&utm_medium=member_desktop', '_blank')">LinkedIn</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="projects project2">
+                    <img src="assets/images/banking.svg" alt="project image">
+                    <div class="project-container">
+                        <article class="article">
+                            <h3 class="title-sm">Basic Banking System</h3>
+                            <p class="text">It's Java Web App that allows use to perform
+                                banking transaction, alongside updating the database after very successful
+                                transaction.
+                            </p>
+
+                            <div class="project-btns">
+                                <button class="btn" onclick="window.open('https://github.com/FernandesReon/Basic-Banking-System', '_blank')">Github</button>
+                                <button class="btn" style="background-color: #FF0000;" onclick="window.open('https://youtu.be/5PBJHSkFqgw?si=9Qx4WP8jYJNsJor2'), '_blank'">Youtube</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="projects project3">
+                    <img src="assets/images/guessing.svg" alt="project image">
+                    <div class="project-container">
+                        <article class="article">
+                            <h3 class="title-sm">Number Guessing Game</h3>
+                            <p class="text">
+                                It's simple and engaging game developed using Java language
+                                that challenges players to guess randomly generated number based
+                                on select difficulty level.
+                            </p>
+
+                            <div class="project-btns">
+                                <button class="btn" onclick="window.open('https://github.com/FernandesReon/OIBSIP_Task2_Number_Guess', '-_blank')">Github</button>
+                                <button class="btn" style="background-color: #0077B5;" onclick="window.open('https://www.linkedin.com/posts/reon-fernandes-9b173824a_javadevelopment-internshipproject-softwareengineering-activity-7203764990653206529-Ik-6?utm_source=share&utm_medium=member_desktop', '_blank')">LinkedIn</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- <div class="projects project4">
+                    <img src="assets/images/weather-forecast.svg" alt="project image">
+                    <div class="project-container">
+                        <article class="article">
+                            <h3 class="title-sm">Weather Application</h3>
+                            <p class="text">Weather Application that is developed using Java as
+                                main language for building the logic. It use Open Weather Api to 
+                                get data at given point on time.
+                            </p>
+
+                            <div class="project-btns">
+                                <button class="btn">Github</button>
+                                <button class="btn" style="background-color: #228B22;">Live Demo</button>
+                            </div>
+                        </article>
+                    </div>
+                </div> -->
             </div>
         </div>
     </section>

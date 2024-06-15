@@ -6,3 +6,9 @@ const toggleNavbar = () =>{
 }
 
 mobileView.addEventListener("click", () => toggleNavbar());
+
+
+//disable right-click
+document.addEventListener('contextmenu', function(e){
+    e.preventDefault();
+});
