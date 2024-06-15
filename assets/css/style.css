@@ -386,7 +386,6 @@ ion-icon {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* flex: 1; */
 }
 
 .frontend {
@@ -439,30 +438,50 @@ article img {
 }
 
 .project-detail-container {
-    padding: 1rem;
+    /* padding: 1rem;
     display: flex;
-    justify-content: space-evenly;
-    align-items: stretch; /* Ensures all items stretch to the same height */
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "project1   project2"
+    "project3   project4";
+    gap: 1rem;
+}
+
+.project1{
+    grid-area: project1;
+}
+
+.project2{
+    grid-area: project2;
+}
+
+.project3{
+    grid-area: project3;
+}
+
+.project4{
+    grid-area: project4;
 }
 
 .projects {
     border: 0.1rem solid rgb(163, 163, 163);
-    border-radius: 2rem;
-    width: 100%;
-    max-width: 400px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Ensures space is distributed between elements */
     align-items: center;
     padding: .5rem;
     background-color: var(--lightOne);
-    flex-grow: 1; /* Allows the project containers to grow as needed */
+    flex-grow: 1;
 }
 
 .projects img {
-    max-width: 340px;
+    max-width: 350px;
     border-radius: 2rem;
     margin: .8rem;
 }

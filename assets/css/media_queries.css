@@ -114,6 +114,15 @@
     article img{
         max-width: 40px;
     }
+
+    .project-detail-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "project1"
+        "project2"
+        "project3"
+        "project4";
+    }
 }
 
 /* For screen size between 635px to 320px */
