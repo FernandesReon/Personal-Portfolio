@@ -64,7 +64,7 @@ img {
 
 section {
     overflow: hidden;
-    padding: 3rem 0;
+    padding: 7rem 0;
 }
 
 .title {
@@ -357,6 +357,7 @@ ion-icon {
 }
 
 /* Experience Section */
+
 #experience {
     position: relative;
     overflow: hidden;
@@ -438,12 +439,6 @@ article img {
 }
 
 .project-detail-container {
-    /* padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
@@ -511,4 +506,125 @@ article img {
     align-items: center;
     flex: 1;
     gap: 1rem;
+}
+
+/* Contact Section */
+.contact{
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-detail-container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "google-location    google-location"
+    "contact-info       contact-form";
+    gap: 1rem;
+}
+
+.contact{
+    border: 0.1rem solid rgb(163, 163, 163);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.contact-form{
+    grid-area: contact-form;
+}
+
+.contact-form .row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: .5rem;
+}
+
+.input-field{
+    padding: 1.2rem 2.1rem;
+    margin: .5rem 0;
+    border: none;
+    border-radius: 4rem;
+    outline: none;
+    background-color: #f3f3f3;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.input-field::placeholder{
+    font-weight: 400;
+}
+
+.input-field.textarea{
+    resize: none;
+    min-height: 200px;
+    border-radius: 2rem;
+}
+
+.input-field:hover{
+    background-color: #ececec;
+}
+
+.input-field .btn{
+    margin-top: 0.6rem;
+}
+
+.contact-info{
+    grid-area: contact-info;
+}
+
+.contact-info .title::after{
+    content: "";
+    width: 50%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--casualColor);
+    display: block;
+    bottom: 0;
+    transform: translateX(50%);
+}
+
+.information-container{
+    margin-top: 2rem;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+}
+
+.information:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+
+.information p{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 1rem;
+}
+
+.contact-icon{
+    min-width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--casualColor);
+    color: var(--lightOne);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-location{
+    background-color: var(--lightOne);
+    border: none !important;
+    grid-area: google-location;
+}
+
+.google-location iframe{
+    border-radius: 1rem;
 }

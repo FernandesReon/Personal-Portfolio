@@ -123,6 +123,10 @@
         "project3"
         "project4";
     }
+
+    section{
+        padding: 5rem 0;
+    }
 }
 
 /* For screen size between 635px to 320px */
@@ -202,5 +206,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
+    }
+
+    section{
+        padding: 3rem 0;
     }
 }
