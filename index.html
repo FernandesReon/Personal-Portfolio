@@ -380,7 +380,8 @@
                 <div class="contact-info contact">
                     <h3 class="title">Get in touch</h3>
                     <p class="text">
-                        Here are my contact details.
+                        Hire me, also I would love to hear your suggestion.
+                        Drop a message.
                     </p>
 
                     <div class="information-container">
@@ -411,27 +412,36 @@
                     </div>
                 </div>
                 <div class="contact-form contact">
-                    <h3 class="title">Contact Me</h3>
-                    <div class="row">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <h3 class="title">Contact Me</h3>
+                        <div class="row">
+                            <input type="hidden" name="access_key" value="5b489353-d88a-4c77-a50f-7f3478cc2cb8">
+                            <input type="text" name="first_name" id="first_name" class="input-field"
+                                placeholder="First Name" required autocomplete="off">
 
-                        <input type="text" name="first_name" id="first_name" class="input-field" placeholder="First Name" required autocomplete="off">
+                            <input type="text" name="last_name" id="last_name" class="input-field"
+                                placeholder="Last Name" required autocomplete="off">
 
-                        <input type="text" name="last_name" id="last_name" class="input-field" placeholder="Last Name" required autocomplete="off">
+                        </div>
 
-                    </div>
+                        <div class="row">
 
-                    <div class="row">
+                            <input type="text" name="phone" id="phone" class="input-field" placeholder="Phone Number"
+                                autocomplete="off">
 
-                        <input type="text" name="phone" id="phone" class="input-field" placeholder="Phone Number" autocomplete="off">
+                            <input type="email" name="email" id="email" class="input-field" placeholder="Email" required
+                                autocomplete="off">
 
-                        <input type="email" name="email" id="email" class="input-field" placeholder="Email" required autocomplete="off">
+                        </div>
 
-                    </div>
-
-                    <div class="row">
-                        <textarea name="message" id="message" class="input-field textarea" placeholder="Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send</button>
+                        <div class="row">
+                            <textarea name="message" id="message" class="input-field textarea"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="contact-btn">
+                            <button type="submit" class="btn">Send</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
