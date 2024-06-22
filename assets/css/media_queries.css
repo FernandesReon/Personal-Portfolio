@@ -73,7 +73,6 @@
     .hero-image {
         flex: 0 0 100%;
     }
-
 }
 
 @media screen and (max-width: 925px) {
@@ -85,19 +84,21 @@
         "contact-form"
         "contact-info";
     }
-}
 
-@media screen and (max-width: 785px) {
-    .about-pic{
-        max-width: 250px;
+    /* Footer */
+    .footer .grid-3{
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        gap: 2rem;
     }
 
-    .about-containers{
-        flex-direction: column;
-        align-items: center;
+    .footer p,
+    .footer a{
+        font-size: 1rem;
     }
 }
-
 
 @media screen and (max-width: 825px) {
     .experience-detail-container{
@@ -138,10 +139,36 @@
     section{
         padding: 5rem 0;
     }
+
+    .back-btn{
+        width: 40px;
+        height: 40px;
+    }
+
+    .back-btn ion-icon{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .about-pic{
+        max-width: 250px;
+    }
+
+    .about-containers{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .bottom-footer{
+        justify-content: center;
+        gap: 1rem;
+    }
 }
 
 /* For screen size between 635px to 320px */
-
 @media screen and (max-width: 635px) and (min-width: 320px) {
     nav .container {
         min-height: 10vh;
@@ -193,6 +220,9 @@
         width: 100%;
     }
 
+    .footer .title-sm{
+        font-size: 1.25rem;
+    }
 }
 
 @media screen and (max-width: 435px) {
@@ -243,5 +273,18 @@
 
     .contact-icon ion-icon{
         font-size: 25px;
+    }
+
+    .bottom-footer{
+        justify-content: center;
+    }
+
+    .copyright .text{
+        font-size: 0.85rem;
+    }
+
+    .input-field{
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
     }
 }

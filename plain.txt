@@ -1,5 +1,0 @@
-Hi, I'm Reon Fernandes a passionate Tech Enthusiast. I am 23 years old. I was born on 20<sup>th</sup>October
-                                in Vasai(W), India. Recently, I completed my Master's degree in Information Technology
-                                from St Gonsalo Gracia College. Over the period of my education, I gained significant knowledge in
-                                different Computer Science fields such as Cyber Security, Networking and Software Development. I thrive to solving
-                                complex problems and continue to expand my knowledge.
