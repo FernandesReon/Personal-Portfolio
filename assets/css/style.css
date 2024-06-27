@@ -312,15 +312,15 @@ ion-icon {
 }
 
 .about-pic {
-    max-width: 450px;
+    max-width: 400px;
     border-radius: 2rem;
 }
 
 .details-container {
-    padding: 1rem;
+    padding: 0.6rem;
     flex: 1;
     background: var(--lightOne);
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     border: var(--casualColor) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
