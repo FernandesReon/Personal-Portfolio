@@ -463,6 +463,11 @@ article img {
     grid-area: project4;
 }
 
+.weather img{
+    max-width: 90% !important;
+    height: max-content;
+}
+
 .projects {
     border: 0.1rem solid rgb(163, 163, 163);
     border-radius: 1rem;
@@ -477,9 +482,10 @@ article img {
 
 .projects img {
     max-width: 350px;
-    border-radius: 2rem;
+    border-radius: 1rem;
     margin: .8rem;
 }
+
 
 .projects h3{
     text-align: center;
